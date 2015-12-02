@@ -50,7 +50,7 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'UAT Queues',
-							url: 'https://rally1.rallydev.com/#/' + projectID + 'd/custom/39844596088',
+							url: '#/' + projectID + 'd/custom/39844596088',
 							scope: 'Radian',
 							leaf: true
 						}, {
