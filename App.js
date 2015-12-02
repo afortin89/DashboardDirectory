@@ -4,6 +4,9 @@ Ext.define('CustomApp', {
 	title: 'Dashboard Directory',
 	launch: function() {
 		
+		var project = this.getContext().getProject();
+		var projectID = project.ObjectID;
+		
 		// Define the Model
 		Ext.define('LinkList', {
 			extend: 'Ext.data.Model',
@@ -27,7 +30,7 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'BPO Project Report',
-							url: 'https://rally1.rallydev.com/#/44988539736d/custom/45199043924',
+							url: 'https://rally1.rallydev.com/#/' + projectID + 'd/custom/45199043924',
 							scope: 'Radian',
 							leaf: true
 						},{
@@ -47,7 +50,7 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'UAT Queues',
-							url: 'https://rally1.rallydev.com/#/37192747640d/custom/39844596088',
+							url: 'https://rally1.rallydev.com/#/' + projectID + 'd/custom/39844596088',
 							scope: 'Radian',
 							leaf: true
 						}, {
