@@ -75,6 +75,16 @@ Ext.define('CustomApp', {
 							url: 'https://rally1.rallydev.com/#/37192747640d/custom/45635211492',
 							scope: 'Radian',
 							leaf: true	
+						}, {
+							name: 'OAF Features',
+							url: 'https://rally1.rallydev.com/#/37192747640d/custom/45553318890',
+							scope: 'Radian',
+							leaf: true
+						}, {
+							name: 'OAF Prod Readiness Stories',
+							url: 'https://rally1.rallydev.com/#/37192747640d/custom/45994900837',
+							scope: 'Radian',
+							leaf: true	
 						}]
 					}]
 				}
