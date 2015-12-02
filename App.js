@@ -88,7 +88,7 @@ Ext.define('CustomApp', {
 
 		// Create the Panel
 		var linkPanel = Ext.create('Ext.tree.Panel', {
-			title: 'Dashboard Directory',
+			// title: 'Dashboard Directory',
 			width: '100%',
 			height: 400,
 			// layout: {
