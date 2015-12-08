@@ -5,9 +5,9 @@ Ext.define('CustomApp', {
 	launch: function() {
 		
 		var project = this.getContext().getProject();
-		var projID = '37192747640';
+		var projID = '37192747640d';
 		// var projectID = project.ObjectID;
-		var uatqueues = 'https://rally1.rallydev.com/#/' + projID + 'd/custom/39844596088';
+		var uatqueues = 'https://rally1.rallydev.com/#/' + projID + '/custom/39844596088';
 		
 		// Define the Model
 		Ext.define('LinkList', {
@@ -32,7 +32,7 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'BPO Project Report',
-							url: 'https://rally1.rallydev.com/#/' + projID + 'd/custom/45199043924',
+							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/45199043924',
 							scope: 'Radian',
 							leaf: true
 						},{
@@ -52,7 +52,7 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'UAT Queues',
-							url: 'https://rally1.rallydev.com/#/' + projID + 'd/custom/39844596088',
+							url: 'https://rally1.rallydev.com/#/custom/39844596088',
 							// url: uatqueues,
 							scope: 'Radian',
 							leaf: true
