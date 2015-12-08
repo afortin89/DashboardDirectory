@@ -5,7 +5,7 @@ Ext.define('CustomApp', {
 	launch: function() {
 		
 		var project = this.getContext().getProject();
-		var projID = '37192747640d';
+		var projID = '37192747640';
 		// var projectID = project.ObjectID;
 		var uatqueues = 'https://rally1.rallydev.com/#/' + projID + 'd/custom/39844596088';
 		
@@ -52,7 +52,7 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'UAT Queues',
-							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/39844596088',
+							url: 'https://rally1.rallydev.com/#/' + projID + 'd/custom/39844596088',
 							// url: uatqueues,
 							scope: 'Radian',
 							leaf: true
@@ -122,7 +122,8 @@ Ext.define('CustomApp', {
 						var link = record.get('url');
 						var text = record.get('name');
 						// var linkvalue = '<a href="#" onClick="newtab(http://www.google.com)">CLICK</a>'; //+ link + '" target="_blank">' + text + '</a>';
-						var linkvalue = '<a href="' + link + '" onclick="window.open(\"\",\"_new\").location.href=this.href; return false;">' + text + '</a>';
+						// var linkvalue = '<a href="' + link + '" onclick="window.open(\"\",\"_new\").location.href=this.href; return false;">' + text + '</a>';
+						var linkvalue = '<a href="#" onclick="window.open(\'' + link + '\')">' + text + '</a>';
 						return linkvalue;
 					}
 					return value;
