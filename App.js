@@ -127,6 +127,7 @@ Ext.define('CustomApp', {
 						var link = record.get('url');
 						var text = record.get('name');
 						var linkvalue = '<a href="' + link + '" target="_blank">' + text + '</a>';
+						linkvalue = '<a class="rui-navigation-menu-item" href="#/37192747640d/custom/46804654022" id="x4-gen5999">Stories by Creator</a>';
 						return linkvalue;
 					}
 					return value;
