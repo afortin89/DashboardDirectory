@@ -131,8 +131,8 @@
 						var link = record.get('url');
 						var text = record.get('name');
 						// var linkvalue = '<a href="#" onClick="newtab(http://www.google.com)">CLICK</a>'; //+ link + '" target="_blank">' + text + '</a>';
-						// var linkvalue = '<a href="' + link + '" onclick="window.open(\"\",\"_new\").location.href=this.href; return false;">' + text + '</a>';
-						var linkvalue = '<a href="#" onclick="window.open(\'' + link + '\')">' + text + '</a>';
+						var linkvalue = '<a href="' + link + '" class="rui-navigation-menu-item">' + text + '</a>';
+						// var linkvalue = '<a href="#" onclick="window.open(\'' + link + '\')">' + text + '</a>';
 						return linkvalue;
 					}
 					return value;
