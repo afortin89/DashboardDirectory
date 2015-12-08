@@ -14,7 +14,9 @@
 	launch: function() {
 		
 		var project = this.getContext().getProject();
-		var projectID = project.ObjectID;
+		var projID = '37192747640d';
+		// var projectID = project.ObjectID;
+		var uatqueues = 'https://rally1.rallydev.com/#/' + projID + 'd/custom/39844596088';
 		
 		// Define the Model
 		Ext.define('LinkList', {
@@ -39,7 +41,7 @@
 						expanded: true,
 						children: [{
 							name: 'BPO Project Report',
-							url: 'https://rally1.rallydev.com/#/' + projectID + 'd/custom/45199043924',
+							url: 'https://rally1.rallydev.com/#/' + projID + 'd/custom/45199043924',
 							scope: 'Radian',
 							leaf: true
 						},{
@@ -59,7 +61,8 @@
 						expanded: true,
 						children: [{
 							name: 'UAT Queues',
-							url: 'https://rally1.rallydev.com/#/' + projectID + 'd/custom/39844596088',
+							url: 'https://rally1.rallydev.com/#/' + projID + 'd/custom/39844596088',
+							// url: uatqueues,
 							scope: 'Radian',
 							leaf: true
 						}, {
