@@ -104,19 +104,14 @@ Ext.define('CustomApp', {
 
 		// Create the Panel
 		var linkPanel = Ext.create('Ext.tree.Panel', {
-			// title: 'Dashboard Directory',
 			width: '100%',
 			height: 400,
-			// layout: {
-				// type: 'fit',
-				// align: 'stretch'
-			// },
 			autoScroll: true,
 			store: store,
 			rootVisible: false,
 			hideHeaders: true,
 			lines: true, // will show lines to display hierarchy.    
-			useArrows: true, //this is a cool feature - converts the + signs into Windows-7 like arrows. "lines" will not be displayed
+			useArrows: true,
 			renderTo: Ext.getBody(),
 				columns: [{
 				xtype: 'treecolumn',
@@ -127,7 +122,6 @@ Ext.define('CustomApp', {
 						var link = record.get('url');
 						var text = record.get('name');
 						var linkvalue = '<a href="' + link + '" target="_blank">' + text + '</a>';
-						linkvalue = '<a class="rui-navigation-menu-item" href="#/37192747640d/custom/46804654022" id="x4-gen5999">Stories by Creator</a>';
 						return linkvalue;
 					}
 					return value;
