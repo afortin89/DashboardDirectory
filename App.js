@@ -113,7 +113,7 @@ Ext.define('CustomApp', {
 			lines: true, // will show lines to display hierarchy.    
 			useArrows: true,
 			renderTo: Ext.getBody(),
-				columns: [{
+			columns: [{
 				xtype: 'treecolumn',
 				dataIndex: 'name',
 				flex: 1,
@@ -128,24 +128,6 @@ Ext.define('CustomApp', {
 					}
 					return value;
 				}
-			},{
-				xtype:'actioncolumn',
-				width:50,
-				items: [{
-					icon: 'extjs/examples/shared/icons/fam/cog_edit.png',  // Use a URL in the icon config
-					tooltip: 'Edit',
-					handler: function(grid, rowIndex, colIndex) {
-						var rec = grid.getStore().getAt(rowIndex);
-						alert("Edit " + rec.get('firstname'));
-					}
-				},{
-					icon: 'extjs/examples/restful/images/delete.png',
-					tooltip: 'Delete',
-					handler: function(grid, rowIndex, colIndex) {
-						var rec = grid.getStore().getAt(rowIndex);
-						alert("Terminate " + rec.get('firstname'));
-					}
-				}]
 			}]
 		});
 		this.add(linkPanel);
