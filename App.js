@@ -121,11 +121,30 @@ Ext.define('CustomApp', {
 					if(record.get('leaf')) {
 						var link = record.get('url');
 						var text = record.get('name');
-						var linkvalue = '<a href="' + link + '" target="_blank">' + text + '</a>';
+						// var linkvalue = '<a href="#" onClick="newtab(http://www.google.com)">CLICK</a>'; //+ link + '" target="_blank">' + text + '</a>';
+						var linkvalue = '<a href="' + link + '" onclick="window.open(\"\",\"_new\").location.href=this.href; return false;">' + text + '</a>';
 						return linkvalue;
 					}
 					return value;
 				}
+			},{
+				xtype:'actioncolumn',
+				width:50,
+				items: [{
+					icon: 'extjs/examples/shared/icons/fam/cog_edit.png',  // Use a URL in the icon config
+					tooltip: 'Edit',
+					handler: function(grid, rowIndex, colIndex) {
+						var rec = grid.getStore().getAt(rowIndex);
+						alert("Edit " + rec.get('firstname'));
+					}
+				},{
+					icon: 'extjs/examples/restful/images/delete.png',
+					tooltip: 'Delete',
+					handler: function(grid, rowIndex, colIndex) {
+						var rec = grid.getStore().getAt(rowIndex);
+						alert("Terminate " + rec.get('firstname'));
+					}
+				}]
 			}]
 		});
 		this.add(linkPanel);
