@@ -5,9 +5,8 @@ Ext.define('CustomApp', {
 	launch: function() {
 		
 		var project = this.getContext().getProject();
-		var projID = '37192747640d';
-		// var projectID = project.ObjectID;
-		var uatqueues = 'https://rally1.rallydev.com/#/' + projID + '/custom/39844596088';
+		// var projID = '37192747640d';
+		var projID = project.ObjectID;
 		
 		// Define the Model
 		Ext.define('LinkList', {
@@ -32,7 +31,7 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'BPO Project Report',
-							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/45199043924',
+							url: 'https://rally1.rallydev.com/#/44988539736d/custom/45199043924',
 							scope: 'Radian',
 							leaf: true
 						},{
@@ -53,7 +52,6 @@ Ext.define('CustomApp', {
 						children: [{
 							name: 'UAT Queues',
 							url: 'https://rally1.rallydev.com/#/custom/39844596088',
-							// url: uatqueues,
 							scope: 'Radian',
 							leaf: true
 						}, {
@@ -121,8 +119,8 @@ Ext.define('CustomApp', {
 					if(record.get('leaf')) {
 						var link = record.get('url');
 						var text = record.get('name');
-						// var linkvalue = '<a href="#" onClick="newtab(http://www.google.com)">CLICK</a>'; //+ link + '" target="_blank">' + text + '</a>';
-						var linkvalue = '<a href="' + link + '" class="rui-navigation-menu-item">' + text + '</a>';
+						var linkvalue = '<a href="' + link + '" target="_blank">' + text + '</a>';
+						// var linkvalue = '<a href="' + link + '" class="rui-navigation-menu-item">' + text + '</a>';
 						// var linkvalue = '<a href="#" onclick="window.open(\'' + link + '\')">' + text + '</a>';
 						return linkvalue;
 					}
