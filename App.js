@@ -44,6 +44,11 @@ Ext.define('CustomApp', {
 							url: 'https://rally1.rallydev.com/#/44988539736d/custom/45498532333',
 							scope: 'Radian',
 							leaf: true
+						},{
+							name: 'MVIs + MMPs',
+							url: 'https://rally1.rallydev.com/#/44988539736d/custom/40687632056',
+							scope: 'Radian',
+							leaf: true
 						}]
 					},{
 						name: 'UAT',
