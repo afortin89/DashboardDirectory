@@ -30,12 +30,11 @@
 		var projID = project.ObjectID + scopeup + scopedown;
 		
 		var server = context.getWorkspace()._ref;
-		if(server.indexOf('loginapirally1')>-1){
-			serverurl = 'loginapirally1.rallydev.com/#/';
-		}else{
+		if(server.indexOf('loginapirally1')>-1) {
 			serverurl = 'rally1.rallydev.com/#/';
+		}else{
+			serverurl = 'loginapirally1.rallydev.com/#/';
 		}
-		console.log(serverurl);
 		
 		// Define the Model
 		Ext.define('LinkList', {
