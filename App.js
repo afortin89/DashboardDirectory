@@ -22,9 +22,9 @@ Ext.define('CustomApp', {
 		
 		var server = context.getWorkspace()._ref;
 		if(server.indexOf('loginapirally1')>-1) {
-			serverurl = 'rally1.rallydev.com/#/';
+			serverurl = 'https://rally1.rallydev.com/#/';
 		}else{
-			serverurl = 'loginapirally1.rallydev.com/#/';
+			serverurl = 'http://loginapirally1.rallydev.com/#/';
 		}
 		
 		// Define the Model
