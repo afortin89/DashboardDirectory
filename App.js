@@ -5,8 +5,8 @@ Ext.define('CustomApp', {
 	launch: function() {
 		
 		var project = this.getContext().getProject();
-		// var projID = '37192747640d';
 		var projID = project.ObjectID;
+		var serverurl = 'https://loginapirally1.rallydev.com/#/';
 		
 		// Define the Model
 		Ext.define('LinkList', {
@@ -31,22 +31,22 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'BPO Project Report',
-							url: 'https://loginapirally1.rallydev.com/#/' + projID + '/custom/45199043924',
+							url: serverurl + projID + '/custom/45199043924',
 							scope: 'Radian',
 							leaf: true
 						},{
 							name: 'BPO Portfolio View (by Domain)',
-							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/47526813142',
+							url: serverurl + projID + '/custom/47526813142',
 							scope: 'Radian',
 							leaf: true
 						},{
 							name: 'User Stories by Initiative',
-							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/45498532333',
+							url: serverurl + projID + '/custom/45498532333',
 							scope: 'Radian',
 							leaf: true
 						},{
 							name: 'MVIs + MMPs',
-							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/40687632056',
+							url: serverurl + projID + '/custom/40687632056',
 							scope: 'Radian',
 							leaf: true
 						}]
@@ -56,7 +56,7 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'Story State Kanban',
-							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/38563575107',
+							url: serverurl + projID + '/custom/38563575107',
 							scope: 'Radian',
 							leaf: true
 						}]
@@ -66,22 +66,22 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'UAT Queues',
-							url: 'https://rally1.rallydev.com/#' + projID + '/custom/39844596088',
+							url: serverurl + projID + '/custom/39844596088',
 							scope: 'Radian',
 							leaf: true
 						}, {
 							name: 'UAT Assignment',
-							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/39895777257',
+							url: serverurl + projID + '/custom/39895777257',
 							scope: 'Radian',
 							leaf: true
 						}, {
 							name: 'UAT Triage',
-							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/45135606916',
+							url: serverurl + projID + '/custom/45135606916',
 							scope: 'Radian',
 							leaf: true	
 						}, {
 							name: 'Features by Initiative - UAT',
-							url: 'https://rally1.rallydev.com/#/' + projID + '/custom/45700032170',
+							url: serverurl + projID + '/custom/45700032170',
 							scope: 'Radian',
 							leaf: true								
 						}]
@@ -91,17 +91,17 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'Initiative Burnup - I46',
-							url: 'https://rally1.rallydev.com/#/' + projID + '37192747640d/custom/45635211492',
+							url: serverurl + projID + '/custom/45635211492',
 							scope: 'Radian',
 							leaf: true	
 						}, {
 							name: 'OAF Features',
-							url: 'https://rally1.rallydev.com/#/37192747640d/custom/45553318890',
+							url: serverurl + projID + '/custom/45553318890',
 							scope: 'Radian',
 							leaf: true
 						}, {
 							name: 'OAF Prod Readiness Stories',
-							url: 'https://rally1.rallydev.com/#/37192747640d/custom/45994900837',
+							url: serverurl + projID + '/custom/45994900837',
 							scope: 'Radian',
 							leaf: true	
 						}]
@@ -135,8 +135,6 @@ Ext.define('CustomApp', {
 						var link = record.get('url');
 						var text = record.get('name');
 						var linkvalue = '<a href="' + link + '" target="_blank">' + text + '</a>';
-						// var linkvalue = '<a href="' + link + '" class="rui-navigation-menu-item">' + text + '</a>';
-						// var linkvalue = '<a href="#" onclick="window.open(\'' + link + '\')">' + text + '</a>';
 						return linkvalue;
 					}
 					return value;
