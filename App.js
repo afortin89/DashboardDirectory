@@ -26,6 +26,7 @@ Ext.define('CustomApp', {
 		}else{
 			serverurl = 'rally1.rallydev.com/#/';
 		}
+		console.log(serverurl);
 		
 		// Define the Model
 		Ext.define('LinkList', {
