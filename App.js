@@ -123,6 +123,11 @@ Ext.define('CustomApp', {
 							url: serverurl + projID + '/custom/45994900837',
 							scope: 'Radian',
 							leaf: true	
+						}, {
+							name: 'Bus. Acc. Defects - Closed/Fixed/Ready for Test',
+							url: serverurl + projID + '/custom/48563774252',
+							scope: 'Radian',
+							leaf: true	
 						}]
 					}]
 				}
