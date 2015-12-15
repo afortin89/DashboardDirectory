@@ -4,8 +4,20 @@ Ext.define('CustomApp', {
 	title: 'Dashboard Directory',
 	launch: function() {
 		
-		var project = this.getContext().getProject();
-		var projID = project.ObjectID;
+		var context = this.getContext();
+		var project = context.getProject();
+
+		var scopeup = '';
+		if(context.getProjectScopeUp()){
+			scopeup = 'u';
+		}
+		var scopedown = '';
+		if(context.getProjectScopeDown()){
+			scopedown = 'd';
+		}
+		
+		var projID = project.ObjectID + scopeup + scopedown;
+		
 		var serverurl = 'https://loginapirally1.rallydev.com/#/';
 		
 		// Define the Model
