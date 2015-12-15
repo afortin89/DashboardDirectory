@@ -18,7 +18,7 @@ Ext.define('CustomApp', {
 		
 		var projID = project.ObjectID + scopeup + scopedown;
 		
-		var serverurl = 'https://loginapirally1.rallydev.com/#/';
+		var serverurl = 'loginapirally1.rallydev.com/#/';
 		
 		// Define the Model
 		Ext.define('LinkList', {
