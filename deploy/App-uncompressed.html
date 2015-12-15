@@ -25,10 +25,16 @@
 			scopedown = 'd';
 		}
 		
+		var serverurl = '';
+		
 		var projID = project.ObjectID + scopeup + scopedown;
 		
-		// var serverurl = 'loginapirally1.rallydev.com/#/';
-		var serverurl = 'http://rally1.rallydev.com/#/';
+		var server = context.getWorkspace()._ref;
+		if(server.indexOf('loginapirally1')>-1){
+			serverurl = 'loginapirally1.rallydev.com/#/';
+		}else{
+			serverurl = 'rally1.rallydev.com/#/';
+		}
 		
 		// Define the Model
 		Ext.define('LinkList', {
