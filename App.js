@@ -151,7 +151,7 @@ Ext.define('CustomApp', {
 
 		// Create the Panel
 		var linkPanel = Ext.create('Ext.tree.Panel', {
-			width: '100%',
+			width: '95%',
 			height: 500,
 			autoScroll: true,
 			store: store,
