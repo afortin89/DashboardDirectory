@@ -49,18 +49,18 @@ Ext.define('CustomApp', {
 						leaf: false, 
 						expanded: true,
 						children: [{
-							name: 'Feature Kanban by Initiative',
-							url: serverurl + projID + '/custom/48617829783',
-							scope: 'Radian',
-							leaf: true
-						},{
 							name: 'BPO Portfolio View (by Domain)',
 							url: serverurl + projID + '/custom/47526813142',
 							scope: 'Radian',
 							leaf: true
 						},{
-							name: 'User Stories by Initiative',
-							url: serverurl + projID + '/custom/45498532333',
+							name: 'Feature Kanban (by Initiative)',
+							url: serverurl + projID + '/custom/48617829783',
+							scope: 'Radian',
+							leaf: true
+						},{
+							name: 'User Story Kanban (by Initiative)',
+							url: serverurl + projID + '/custom/48618148895',
 							scope: 'Radian',
 							leaf: true
 						},{
@@ -74,6 +74,11 @@ Ext.define('CustomApp', {
 						leaf: false, 
 						expanded: true,
 						children: [{
+							name: 'User Story Kanban (by Initiative)',
+							url: serverurl + projID + '/custom/48618148895',
+							scope: 'Radian',
+							leaf: true
+						},{
 							name: 'Story State Kanban',
 							url: serverurl + projID + '/custom/38563575107',
 							scope: 'Radian',
