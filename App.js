@@ -50,7 +50,7 @@ Ext.define('CustomApp', {
 						expanded: true,
 						children: [{
 							name: 'BPO Portfolio View (by Domain)',
-							url: serverurl + projID + '/custom/47526813142',
+							url: serverurl + projID + '/custom/48618366520',
 							scope: 'Radian',
 							leaf: true
 						},{
