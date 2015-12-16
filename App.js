@@ -68,6 +68,11 @@ Ext.define('CustomApp', {
 							url: serverurl + projID + '/custom/40687632056',
 							scope: 'Radian',
 							leaf: true
+						},{
+							name: 'Portfolio Kanban',
+							url: serverurl + projID + '/portfoliokanban',
+							scope: 'Radian',
+							leaf: true							
 						}]
 					},{
 						name: 'BBA',
