@@ -73,6 +73,11 @@ Ext.define('CustomApp', {
 							url: serverurl + projID + '/portfoliokanban',
 							scope: 'Radian',
 							leaf: true							
+						},{
+							name: 'Portfolio Items',
+							url: serverurl + projID + '/portfolioitemstreegrid',
+							scope: 'Radian',
+							leaf: true
 						}]
 					},{
 						name: 'BBA',
