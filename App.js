@@ -49,8 +49,8 @@ Ext.define('CustomApp', {
 						leaf: false, 
 						expanded: true,
 						children: [{
-							name: 'BPO Project Report',
-							url: serverurl + projID + '/custom/45199043924',
+							name: 'Feature Kanban by Initiative',
+							url: serverurl + projID + '/custom/48617829783',
 							scope: 'Radian',
 							leaf: true
 						},{
