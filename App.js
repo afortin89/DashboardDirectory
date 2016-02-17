@@ -24,7 +24,7 @@ Ext.define('CustomApp', {
 		if(server.indexOf('loginapirally1')>-1) {
 			serverurl = 'https://rally1.rallydev.com/#/';
 		}else{
-			serverurl = 'http://loginapirally1.rallydev.com/#/';
+			serverurl = 'https://rally1.rallydev.com/#/';
 		}
 		
 		// Define the Model
